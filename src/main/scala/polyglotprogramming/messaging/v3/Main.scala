@@ -1,6 +1,6 @@
-package polyglotprogramming.messaging.v2
+package polyglotprogramming.messaging.v3
 import polyglotprogramming.messaging.*
-import polyglotprogramming.messaging.v2.given
+import polyglotprogramming.messaging.v3.given
 
 object Processor:
   def apply[IM <: IncomingMessage](message: IM)(using handler: MessageHandler[IM]): OutgoingMessage =

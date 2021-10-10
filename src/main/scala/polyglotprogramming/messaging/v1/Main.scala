@@ -9,9 +9,7 @@ object Processor:
     case Stop(details)    => StopHandler(message.asInstanceOf[Stop])
 
 @main def Messaging() =
-  Seq(Start("start"),
-      DoWork1("dowork1"),
-      DoWork2("dowork2"),
-      Stop("stop")).foreach { message =>
-    println(Processor(message))
-  }
+  println(Processor(Start("start")))
+  println(Processor(DoWork1("dowork1")))
+  println(Processor(DoWork2("dowork2")))
+  println(Processor(Stop("stop")))
