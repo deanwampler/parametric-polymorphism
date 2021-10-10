@@ -9,9 +9,13 @@ object Processor:
     case IncomingMessage.Stop(details)    => StopHandler(message.asInstanceOf[IncomingMessage.Stop])
 
 @main def Messaging() =
-  Seq(IncomingMessage.Start("start"),
-      IncomingMessage.DoWork1("dowork1"),
-      IncomingMessage.DoWork2("dowork2"),
-      IncomingMessage.Stop("stop")).foreach { message =>
-    println(Processor(message))
-  }
+  println(Processor(IncomingMessage.Start("start")))
+  println(Processor(IncomingMessage.DoWork1("dowork1")))
+  println(Processor(IncomingMessage.DoWork2("dowork2")))
+  println(Processor(IncomingMessage.Stop("stop")))
+  // Seq(IncomingMessage.Start("start"),
+  //     IncomingMessage.DoWork1("dowork1"),
+  //     IncomingMessage.DoWork2("dowork2"),
+  //     IncomingMessage.Stop("stop")).foreach { message =>
+  //   println(Processor(message))
+  // }
