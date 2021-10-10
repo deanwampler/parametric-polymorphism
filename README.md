@@ -2,7 +2,7 @@
 
 Dean Wampler, October 2021.
 
-This repo is the code for the [Scala 3 Medium](https://medium.com//scala-3) post on [The Value of Parametric Polymophism]().
+This repo is the code for the [Scala 3 Medium](https://medium.com//scala-3) post on [The Value of Parametric Polymophism](https://medium.com/scala-3/the-value-of-parametric-polymophism-e76bfb9a516b).
 
 Try the examples by starting `sbt`, then use `run`, then pick the example to run from the list.
 

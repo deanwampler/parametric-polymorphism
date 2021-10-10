@@ -1,12 +1,13 @@
 package polyglotprogramming.messaging
 
 /**
- * Use a parent trait and case class subtypes. I could use an enum instead,
- * but it causes some typing issues in the v2 and v3 implementations. See the
- * code comments in the v2 implementation in the git branch "with-enums" for
- * details. Note that I don't use "sealed" for the IncomingMessage types,
- * because in v4 I'll show how nicely we can add new message types with minimal,
- * yet robust code changes.
+ * Use a parent trait and case class subtypes. I don't use "sealed" for the
+ * IncomingMessage types, because in v4 I'll show how nicely we can add
+ * new message types with minimal, yet robust code changes.
+ *
+ * I could have used an enum instead here, but doing so causes some typing issues
+ * in the v2 through v4 implementations. See the code comments in the v2
+ * implementation in the git branch "with-enums" for details.
  *
  * @param details string as a simple way of returning information.
  */
