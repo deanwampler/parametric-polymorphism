@@ -8,8 +8,8 @@ trait MessageHandler[IM <: IncomingMessage]:
 
   protected def process(message: IM): OutgoingMessage
 
-  protected def success(response: String) = Succeeded(response)
-  protected def failure(response: String) = Failed(response)
+  protected def success(response: String): OutgoingMessage = Succeeded(response)
+  protected def failure(response: String): OutgoingMessage = Failed(response)
 
 given MessageHandler[Start] with
   protected def process(message: Start): OutgoingMessage = success("started")

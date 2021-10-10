@@ -7,6 +7,8 @@ package polyglotprogramming.messaging
  * details. Note that I don't use "sealed" for the IncomingMessage types,
  * because in v4 I'll show how nicely we can add new message types with minimal,
  * yet robust code changes.
+ *
+ * @param details string as a simple way of returning information.
  */
 trait IncomingMessage(details: String)
 case class Start(details: String)   extends IncomingMessage(details)
