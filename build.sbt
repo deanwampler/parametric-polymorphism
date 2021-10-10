@@ -33,5 +33,5 @@ lazy val root = project
     javacOptions ++= Seq(
       "-Xlint:unchecked", "-Xlint:deprecation"), // Java 8: "-Xdiags:verbose"),
 
-    console / initialCommands := "import polyglotprogramming._",
+    console / initialCommands := "import polyglotprogramming.*",
 )

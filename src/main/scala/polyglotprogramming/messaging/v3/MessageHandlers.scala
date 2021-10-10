@@ -2,7 +2,7 @@ package polyglotprogramming.messaging.v3
 import polyglotprogramming.messaging.*
 
 trait MessageHandler[IM <: IncomingMessage]:
-  def apply(message: IM): OutgoingMessage =
+  final def apply(message: IM): OutgoingMessage =
     println(s"Received message: $message")
     process(message)
 
