@@ -3,4 +3,5 @@ resolvers ++= Seq(
   "Sonatype snapshots" at "https://oss.sonatype.org/content/repositories/snapshots/"
 )
 
-addSbtPlugin("io.github.davidgregory084" % "sbt-tpolecat" % "0.1.20")
+// An alternative to explicitly specifying compiler options; use the settings here:
+// addSbtPlugin("io.github.davidgregory084" % "sbt-tpolecat" % "0.1.20")
